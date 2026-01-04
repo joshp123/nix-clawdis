@@ -5,11 +5,11 @@
 
 stdenvNoCC.mkDerivation {
   pname = "clawdis-app";
-  version = "2.0.0-beta4";
+  version = "2.0.0-beta5";
 
   src = fetchzip {
-    url = "https://github.com/steipete/clawdis/releases/download/v2.0.0-beta4/Clawdis-2.0.0-beta4.zip";
-    hash = "sha256-Oa7cejVFfZtJBSmjDaRjqocVyXo+WeS/xucGpJFDzIg=";
+    url = "https://github.com/steipete/clawdis/releases/download/v2.0.0-beta5/Clawdis-2.0.0-beta5.zip";
+    hash = "sha256-1MrLVS65VOaVgRCCeN7YqLaA8KGSk2C8C+MXpl1qfiQ=";
     stripRoot = false;
   };
 
