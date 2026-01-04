@@ -51,5 +51,12 @@
       overlays.default = overlay;
       homeManagerModules.clawdbot = import ./nix/modules/home-manager/clawdbot.nix;
       darwinModules.clawdbot = import ./nix/modules/darwin/clawdbot.nix;
+
+      templates = {
+        agent-first = {
+          path = ./templates/agent-first;
+          description = "Agent-first template for clawdbot";
+        };
+      };
     };
 }
