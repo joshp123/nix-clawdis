@@ -729,7 +729,7 @@ let
     '';
   in {
     homeFile = {
-      name = inst.configPath;
+      name = toRelative inst.configPath;
       value = { text = configJson; };
     };
 
