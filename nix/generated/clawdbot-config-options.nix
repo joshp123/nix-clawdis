@@ -1929,6 +1929,12 @@ in
     enabled = lib.mkOption {
       type = t.bool;
     };
+    groupAllowFrom = lib.mkOption {
+      type = t.listOf (t.str);
+    };
+    groupPolicy = lib.mkOption {
+      type = t.enum [ "open" "disabled" "allowlist" ];
+    };
     historyLimit = lib.mkOption {
       type = t.int;
     };
