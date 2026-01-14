@@ -16,6 +16,7 @@ let
   clawdbotTools = pkgs.buildEnv {
     name = "clawdbot-tools";
     paths = toolSets.tools;
+    pathsToLink = [ "/bin" ];
   };
   clawdbotBundle = pkgs.callPackage ./clawdbot-batteries.nix {
     clawdbot-gateway = clawdbotGateway;
