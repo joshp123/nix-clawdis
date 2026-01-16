@@ -3511,6 +3511,9 @@ in
       };
     }; };
     };
+    dmScope = lib.mkOption {
+      type = t.oneOf [ t.enum [ "main" ] t.enum [ "per-peer" ] t.enum [ "per-channel-peer" ] ];
+    };
     heartbeatIdleMinutes = lib.mkOption {
       type = t.int;
     };
